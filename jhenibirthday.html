@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>damaa</title>
+<style>
+:root{--bg:#fff8f8;--card:#ffffff;--accent:#d46b8a;--text:#222;--muted:#666;}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(180deg,#fff 0%, #fff8f8 100%);}
+.container{max-width:900px;margin:40px auto;padding:24px;background:var(--card);border-radius:16px;box-shadow:0 6px 30px rgba(0,0,0,0.08);}
+.header{text-align:center;padding-bottom:8px;}
+h1{margin:0;font-size:2.2rem;color:var(--accent);}
+.lead{color:var(--text);font-size:1.05rem;margin-top:12px;text-align:center;}
+.grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:20px;}
+@media(min-width:700px){.grid{grid-template-columns: 1fr 1fr;}}
+figure{margin:0;border-radius:12px;overflow:hidden;background:#f7f7f7;display:flex;align-items:center;justify-content:center;height:280px;}
+img{width:100%;height:100%;object-fit:cover;display:block;}
+.message{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff 0,#fffefc);box-shadow:inset 0 1px 0 rgba(255,255,255,0.6);font-size:1.05rem;color:var(--text);line-height:1.5;}
+.footer{text-align:center;margin-top:18px;color:var(--muted);font-size:0.95rem;}
+.btn-row{display:flex;gap:8px;justify-content:center;margin-top:16px;}
+.button{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+</style>
+</head>
+<body>
+<main class="container" role="main">
+  <header class="header" aria-labelledby="title">
+    <h1 id="title">Feliz Aniversário — Minha Dama ❤️</h1>
+    <p class="lead">Um dia especial só pra você — com todo carinho e amor.</p>
+  </header>
+
+  <section class="grid" aria-label="Fotos comemorativas">
+    <figure><img src="foto1.jpg" alt="Primeira foto de aniversário"></figure>
+    <figure><img src="foto2.jpg" alt="Segunda foto de aniversário"></figure>
+  </section>
+
+  <section class="grid" aria-label="Mais Fotos comemorativas">
+    <figure><img src="foto3.jpg" alt="Terceira foto de aniversário"></figure>
+  </section>
+
+  <section class="message" aria-labelledby="mensagem-title" tabindex="0">
+    <h2 id="mensagem-title" class="sr-only">Mensagem de Aniversário</h2>
+    <p>Feliz aniversário meu amor, é uma honra pra mim estar aqui mais um ano podendo comemora-lo com você, eu espero que você tenha um dia incrível do tanto que você é aos meus olhos e que você possa aproveitar ao máximo esse dia afinal ele é todo seu, quero te desejar tudo do melhor possível e que possamos passar muitos e muitos mais juntos, continue sendo essa mulher maravilhosa, educada, engraçada, gentil, feliz, carismática, positiva, e todas as outras incontáveis qualidades que você tem, estou aqui pra tudo o que você precisar, que venham aí mais muitas e muitas comemorações como essas eu sempre estarei torcendo por você, eu te amo minha dama.
+    
+      você é muito especial para mim, espero que eu consiga transmitir isso pra ti de forma clara se você soubesse o quanto brilha aos meus olhos nunca mais você iria se diminuir de novo saiba meu bem você é uma pessoa incrivel, eu tenho orgulho de você e eu fico feliz que o destino em meio tudo tenha feito a gente se conhecer.</p>
+  </section>
+
+  <div class="btn-row" role="navigation" aria-label="Ações">
+    <a class="button" href="#title">Voltar ao topo</a>
+    
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <p>Feito com amor. ❤️</p>
+  </footer>
+</main>
+</body>
+</html>
